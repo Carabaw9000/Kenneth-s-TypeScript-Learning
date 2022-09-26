@@ -30,3 +30,5 @@ const Sally: Human = new Human("Sally", 30, 'Female')
 
 // John.legs = ""; // Error is number
 John.sayHello();
+
+// Test change
