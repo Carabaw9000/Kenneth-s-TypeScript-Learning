@@ -16,7 +16,7 @@
 		"strict": true,
 		"target": "ESNext",
 		"typeRoots": ["node_modules/@rbxts"],
-		"strictPropertyInitialization": false,
+		"strictPropertyInitialization": true,
 		// configurable
 		"rootDir": "src",
 		"outDir": "out",
