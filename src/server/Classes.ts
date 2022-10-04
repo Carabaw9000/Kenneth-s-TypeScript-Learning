@@ -1,7 +1,7 @@
 type Sex = 'Male' | 'Female'
 let test = "Test"; // Type is now string
 
-class Human {
+export class Human {
     // fields creates public writable property. unless it is readonly
     name: string; 
     age: number;
@@ -38,7 +38,7 @@ const Sally: Human = new Human("Sally", 30, 'Female')
 // John.legs = ""; // Error is number
 John.sayHello();
 
-class Man extends Human {
+export class Man extends Human {
     //Super Calls
     // Just as in JavaScript, if you have a base class, you’ll need to call super(); in your constructor body before using any this. members:
     constructor(name: string, age: number){
