@@ -4,6 +4,8 @@ import {} from "server/Classes"
 import {} from "server/Import & Export/StringValidator"
 import {} from "server/Import & Export/ZipCodeValidator"
 import 'server/Import & Export/ZipCodeValidator'
+import 'server/Arrays'
+
 print(makeHello("main.server.ts"));
 
 let Samson: Human = new Human("Samson",25,"Male",100)
