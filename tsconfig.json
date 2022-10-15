@@ -1,6 +1,9 @@
 {
 	"compilerOptions": {
 		// required
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"strict": true,
 		"allowSyntheticDefaultImports": true,
 		"downlevelIteration": true,
 		"jsx": "react",
@@ -13,7 +16,6 @@
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
 		"moduleDetection": "force",
-		"strict": true,
 		"target": "ESNext",
 		"typeRoots": ["node_modules/@rbxts"],
 		"strictPropertyInitialization": true,

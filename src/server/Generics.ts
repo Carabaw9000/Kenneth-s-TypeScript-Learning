@@ -51,3 +51,6 @@ function identity(arg: number): number {
  } 
  
  let theResult = castToType<string>(23) // output would be of type string
+
+ let test: any = "sdf"
+ let hmm
