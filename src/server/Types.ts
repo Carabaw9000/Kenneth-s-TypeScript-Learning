@@ -1,6 +1,8 @@
 //https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types
 //https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
 
+import { Test } from "./Import & Export/ZipCodeValidator"
+
 // Primitive types
 // string, number and boolean
 let word: string = "Hey"
@@ -77,3 +79,28 @@ function greet(name: string) {
 // Would be a runtime error if executed!
 // greet(42); // Error
 // Argument of type 'number' is not assignable to parameter of type 'string'.
+
+
+// Return Type Annotations
+// You can also add return type annotations. Return type annotations appear after the parameter list:
+function getFavoriteNumber(): number {
+  return 26;
+}
+// not needed type is inferred based on the return statement
+
+//non nil assertions
+class Test123 {
+  name?: string;
+}
+let t: Test123 = new Test123()
+// let isThere1: string = t.name // Error
+// solutions
+let isThere: string = t.name! // non null assertions operator
+let isThere2: string | undefined = t.name
+let isThere3: string = t.name !== undefined ? t.name : ""; // type guard
+
+// Anonymous Functions
+// Anonymous functions are a little bit different from function declarations. 
+// When a function appears in a place where TypeScript can determine how it’s going to be called, the parameters of that function are automatically given types.
+// Here’s an example:
+
